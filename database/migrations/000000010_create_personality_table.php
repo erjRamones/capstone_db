@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('personality', function (Blueprint $table) {
             $table->bigIncrements('id'); #primary key
             //$table->dateTime('datetime_created'); redundant to timestamps();
-            //$table->dateTime('datetime_last_modified'); thiso one too;
+            //$table->dateTime('datetime_last_modified'); this one too;
             $table->dateTime('datetime_registered');
             $table->string('family_name');
             $table->string('middle_name');
