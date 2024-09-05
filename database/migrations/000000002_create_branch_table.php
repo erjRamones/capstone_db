@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::create('branch', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('description');
+
+            #constraints
+            $table->unique('description');
             $table->timestamps();
         });
     }

@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Requests;
-use GuzzleHttp\Psr7\Request;
+use Illuminate\Foundation\Http\FormRequest;
 
-class DBLibraryUpdateRequest extends Request
+class DBLibraryUpdateRequest extends FormRequest
 {
     public function authorize() : bool
     {

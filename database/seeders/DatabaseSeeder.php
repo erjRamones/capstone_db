@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
         $faker = Faker::create();
 
        $this->c = 500;
-        $this->f = 0;
+        $this->f = 1;
 
         for($i = 0; $i < 100; $i++)
         {
@@ -89,8 +89,8 @@ class DatabaseSeeder extends Seeder
             'customer_group'
         ];
 
-        while ($c > 0) {
-            echo "1"; echo $f+1;
+        while ($this->c > 0) {
+            echo "1"; echo $this->f+1;
             $modeltype = $faker->randomElement($modelTypes);
             $description = $faker->sentence(10);
             echo $modeltype;
@@ -145,7 +145,8 @@ class DatabaseSeeder extends Seeder
                     throw new \InvalidArgumentException("Unknown model type: $modeltype");
             }
 
-            $c--;
+            $this->c--;
+            $this->f++;
         }
 
         Employee::create([
