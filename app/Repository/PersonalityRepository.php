@@ -44,6 +44,7 @@ class PersonalityRepository implements PersonalityRepositoryInterface
         $Personality->branch_id = $payload->branch_id;
         $Personality->barangay_id = $payload->barangay_id;
         $Personality->city_id = $payload->city_id;
+        $Personality->country_id = $payload->country_id;
         $Personality->province_id = $payload->province_id;
         $Personality->spouse_id = $payload->spouse_id;
         $Personality->credit_status_id = $payload->credit_status_id;
@@ -76,6 +77,7 @@ class PersonalityRepository implements PersonalityRepositoryInterface
         $Personality->branch_id = $payload->branch_id;
         $Personality->barangay_id = $payload->barangay_id;
         $Personality->city_id = $payload->city_id;
+        $Personality->country_id = $payload->country_id;
         $Personality->province_id = $payload->province_id;
         $Personality->spouse_id = $payload->spouse_id;
         $Personality->credit_status_id = $payload->credit_status_id;

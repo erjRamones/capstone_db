@@ -24,14 +24,14 @@ class User_Account extends Authenticatable
     protected $table = 'user_account';
     protected $fillable = [
         'user_id',
-        'email',
+        'status_id',
         'last_name',
         'first_name',
         'middle_name',
         'password',
-        'status_id',
-        'datetime_registered',
+        'email',
         'employee_id',
+        //'datetime_registered',
     ];
 
     /**
